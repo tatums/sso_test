@@ -47,7 +47,7 @@ class App
         <div class="container-fluid">
           <div class="row">
            <div class="col-md-4">
-            <form action='http://localhost:3001/sso/sessions' role='form' method='POST'>
+            <form action='http://trustedchoice.pixalized.com/sso/sessions' role='form' method='POST'>
               <input name='site_access_key' type='hidden' value='0c938b9276daea4dad4c0a8b4d202a30'>
               <div class="form-group">
                 <lable>First Name</lable>
