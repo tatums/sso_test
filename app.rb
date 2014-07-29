@@ -44,33 +44,28 @@ class App
   def body
     <<-HTML
       <body>
-
-<div class="container-fluid">
-  <div class="row">
-
-   <div class="col-md-4">
-    <form action='http://localhost:3001/sso/sessions' role='form' method='POST'>
-      <input name='site_access_key' type='hidden' value='0c938b9276daea4dad4c0a8b4d202a30'>
-      <div class="form-group">
-        <lable>First Name</lable>
-        <input class="form-control" name='user[first_name]' type='text'>
+        <div class="container-fluid">
+          <div class="row">
+           <div class="col-md-4">
+            <form action='http://localhost:3001/sso/sessions' role='form' method='POST'>
+              <input name='site_access_key' type='hidden' value='0c938b9276daea4dad4c0a8b4d202a30'>
+              <div class="form-group">
+                <lable>First Name</lable>
+                <input class="form-control" name='user[first_name]' type='text'>
+              </div>
+              <div class="form-group">
+                <lable>Last Name</lable>
+                <input class="form-control" name='user[last_name]' type='text'>
+              </div>
+              <div class="form-group">
+                <lable>Email</lable>
+                <input class="form-control" name='user[email]' type='text'>
+              </div>
+              <input class='btn btn-default' type='submit' value='Login'>
+            </form>
+          </div>
+        </div>
       </div>
-      <div class="form-group">
-        <lable>Last Name</lable>
-        <input class="form-control" name='user[last_name]' type='text'>
-      </div>
-      <div class="form-group">
-        <lable>Email</lable>
-        <input class="form-control" name='user[email]' type='text'>
-      </div>
-      <input class='btn btn-default' type='submit' value='Login'>
-    </form>
-
-  </div>
-
-  </div>
-</div>
-
     </body>
     HTML
   end
